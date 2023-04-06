@@ -93,7 +93,7 @@ Common.readFile参数为pem存储目录的相对路径， 或者直接填入pem�
 	api:="" //节点网关地址
 	userCode:="" //用户编号
 	appCode :="" //应用编号
-	puk :="" //应用应用内容
+	puk :="" //应用公钥内容
 	prk :="" //应用私钥内容
 	mspdir:="" //注册用户证书存放目录
 ```
@@ -133,7 +133,7 @@ public void initConfig() throws IOException {
 //调用用户注册接口
 public void userRegister() {
     try {
-        initConfig(); //这里为示例，实际使用中，值需在程序生命周期内调用一次即可
+        initConfig(); //这里为示例，实际使用中，只需在程序生命周期内调用一次即可
     } catch (IOException e) {
         e.printStackTrace();
         return ;
