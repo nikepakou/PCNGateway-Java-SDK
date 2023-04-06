@@ -154,6 +154,9 @@ public void userRegister() {
 
 ### 3.一些其他说明
 
+#### 密钥托管和非托管的区别
+见https://www.bsnbase.com/static/tmpFile/bzsc/helper/5-2.html
+
 #### 非托管应用的用户身份证书的说明
 
 由于`Fabric`框架的非托管的应用在调用网关进行交易的时候所需要的用户证书需要用户自己生成，其流程是：注册用户->登记用户证书
